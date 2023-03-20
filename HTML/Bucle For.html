@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Haz clic en el botón y se mostraran los titulares del 6 al 1</p>
+<button onclick="myFunction()">Prueba</button>
+<div id="demo"></div>
+<script>
+function myFunction() {
+var x ="", i;
+for (i=6; i>=1; i--) {
+x = x + "<h" + i + ">Titular " + i + "</h" + i + ">";
+}
+document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>
